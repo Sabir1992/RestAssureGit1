@@ -8,6 +8,7 @@ public class DeleteBookingTests extends  BaseTests {
 
     @Test
     public void deleteBook(){
+        //Delete book metod
         Response response = given(resScpec)
                 .contentType(ContentType.JSON)
                 .header("Cookie","token="+createToken())
